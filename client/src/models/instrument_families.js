@@ -8,7 +8,6 @@ class InstrumentFamilies {
 
   bindEvents() {
 
-    console.log("Working");
     PubSub.publish('InstrumentFamilies:data-ready', this.data);
 
     PubSub.subscribe('SelectView:change', (evt) => {
